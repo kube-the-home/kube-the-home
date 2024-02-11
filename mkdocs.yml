@@ -1,0 +1,15 @@
+site_name: Kube The Home
+site_url: https://example.com/
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Helm-Charts:
+    - Kanboard: 
+      - Helm-Charts/kanboard/index.md
+      - Examples:
+        - Basic: Helm-Charts/kanboard/Examples/Basic.md
+        - ArgoCD: Helm-Charts/kanboard/Examples/ArgoCD.md
+    - Generic-Application: Helm-Charts/generic/index.md
+  - Contributing: Contribution/index.md
