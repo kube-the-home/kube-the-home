@@ -1,8 +1,16 @@
-# Kanboard
-
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kanboard)](https://artifacthub.io/packages/search?repo=kanboard)
+![GitHub Release](https://img.shields.io/github/v/release/kube-the-home/kanboard-helm?logoColor=white&color=0366D6)
 
 This Chart can be used to deploy [Kanboard](https://github.com/kanboard/kanboard).
+
+Installing the Helm Chart.
+```sh
+# Adding the Repository
+helm repo add kanboard https://kube-the-home.github.io/kanboard-helm/
+
+# Installing the Chart
+helm install my-kanboard kanboard/kanboard
+```
 
 ### Current restrictions
 - Persistence is not setup yet
