@@ -1,3 +1,36 @@
+# Kanboard
+
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kanboard)](https://artifacthub.io/packages/search?repo=kanboard)
+
+This Chart can be used to deploy [Kanboard](https://github.com/kanboard/kanboard).
+
+### Current restrictions
+- Persistence is not setup yet
+- External Databases cannot be used at the moment
+
+
+# Examples
+
+A basic example for your values.yaml.
+
+```yaml
+ingress:
+    enabled: true
+    host: example.com
+```
+
+A basic example for your values.yaml using tls.
+```yaml
+ingress:
+    enabled: true
+    host: exmple.com
+    tls:
+    - hosts:
+        - example.com
+        secretName: kanboard-tls
+```
+
+
 A basic example to using this Chart with ArgoCD.
 
 ```yaml

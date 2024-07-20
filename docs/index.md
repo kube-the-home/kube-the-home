@@ -1,6 +1,9 @@
 # Welcome to Kube The Home
 
-- [Contributing](./Contribution/contributing.md)
+- [Contributing](./Contribution/index.md)
 - Helm Charts
-    * [Generic Application](./Helm-Charts/generic/index.md)
-    * [Kanboard](./Helm-Charts/kanboard/index.md)
+    * [Dotnet Aspire Dashboard](./Helm-Charts/aspire-dashboard.md)
+    * [Skooner](./Helm-Charts/skooner.md)
+    * [Kanboard](./Helm-Charts/kanboard.md)
+    * [Generic Application](./Helm-Charts/generic.md)
+
