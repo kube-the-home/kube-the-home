@@ -33,7 +33,7 @@ ui:
         tls:
             - hosts:
                 - aspire.example.com
-            secretName: aspire-tls
+              secretName: aspire-tls
 env:
     # Setting ApiKey to be the main method of authentication
     # for ingestion
