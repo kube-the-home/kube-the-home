@@ -2,14 +2,24 @@ site_name: Kube The Home
 site_url: https://example.com/
 theme:
   name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 nav:
   - Home: index.md
   - Helm-Charts:
-    - Kanboard: 
-      - Helm-Charts/kanboard/index.md
-      - Examples:
-        - Basic: Helm-Charts/kanboard/Examples/Basic.md
-        - ArgoCD: Helm-Charts/kanboard/Examples/ArgoCD.md
-    - Generic-Application: Helm-Charts/generic/index.md
+      - Kanboard: Helm-Charts/kanboard.md
+      - Skooner: Helm-Charts/skooner.md
+      - Aspire Dashboard: Helm-Charts/aspire-dashboard.md
+      - Generic Application: Helm-Charts/generic.md
   - Contributing: Contribution/index.md
