@@ -10,5 +10,6 @@ that I feel like are missing in the world of self-hostable applications.
     * [Dotnet Aspire Dashboard](./Helm-Charts/aspire-dashboard.md)
     * [Skooner](./Helm-Charts/skooner.md)
     * [Kanboard](./Helm-Charts/kanboard.md)
+    * [System Upgrade Controller](./Helm-Charts/system-upgrade-controller.md)
     * [Generic Application](./Helm-Charts/generic.md)
 

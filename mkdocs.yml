@@ -21,5 +21,6 @@ nav:
       - Kanboard: Helm-Charts/kanboard.md
       - Skooner: Helm-Charts/skooner.md
       - Aspire Dashboard: Helm-Charts/aspire-dashboard.md
+      - System Upgrade Controller: Helm-Charts/system-upgrade-controller.md
       - Generic Application: Helm-Charts/generic.md
   - Contributing: Contribution/index.md
