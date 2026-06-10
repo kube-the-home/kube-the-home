@@ -8,6 +8,6 @@ on:
 
 jobs:
   docs:
-    uses: kube-the-home/github-actions/.github/workflows/mkdocs.yaml@84c1860e25ca085e075b72749337455d6b3ed16c # v1.3.0
+    uses: kube-the-home/github-actions/.github/workflows/mkdocs.yaml@cc715d5c26c3498c970eb730b01344aa61c5152d # v1.3.4
     permissions:
       contents: write
