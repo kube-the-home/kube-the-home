@@ -1,29 +1,13 @@
 name: deploy mkdocs
+
 on:
   push:
     branches:
-      - master 
+      - master
       - main
-permissions:
-  contents: write
+
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v6
-        with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v5
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
+  docs:
+    uses: kube-the-home/github-actions/.github/workflows/mkdocs.yaml@84c1860e25ca085e075b72749337455d6b3ed16c # v1.3.0
+    permissions:
+      contents: write
